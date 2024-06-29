@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_page">
+
+    <fragment
+        android:id="@+id/home_page"
+        android:name="com.example.finalproject.home_page"
+        android:label="Home Page"
+        tools:layout="@layout/home_page">
+
+        <action
+            android:id="@+id/action_home_page_to_entry_page"
+            app:destination="@id/entry_page" />
+
+        <action
+            android:id="@+id/action_home_page_to_sign_up_page"
+            app:destination="@id/sign_up_page" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/entry_page"
+        android:name="com.example.finalproject.entry_page"
+        android:label="Journal Entries"
+        tools:layout="@layout/entry_page">
+
+        <action
+            android:id="@+id/action_entry_page_to_home_page"
+            app:destination="@id/home_page" />
+        <action
+            android:id="@+id/action_entry_page_to_add_entry_page"
+            app:destination="@id/add_entry_page" />
+        <action
+            android:id="@+id/action_entry_page_to_previous_entries"
+            app:destination="@id/previous_entries" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sign_up_page"
+        android:name="com.example.finalproject.sign_up_page"
+        android:label="Sign Up"
+        tools:layout="@layout/sign_up_page">
+
+        <action
+            android:id="@+id/action_sign_up_page_to_home_page"
+            app:destination="@id/home_page" />
+        <action
+            android:id="@+id/action_sign_up_page_to_entry_page"
+            app:destination="@id/entry_page" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_entry_page"
+        android:name="com.example.finalproject.add_entry_page"
+        android:label="Journal Entries"
+        tools:layout="@layout/add_entry_page">
+
+        <action
+            android:id="@+id/action_add_entry_page_to_home_page"
+            app:destination="@id/home_page" />
+
+        <action
+            android:id="@+id/action_add_entry_page_to_journal_entry"
+            app:destination="@id/journal_entry" />
+        <action
+            android:id="@+id/action_add_entry_page_to_prompt_page"
+            app:destination="@id/prompt_page" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/journal_entry"
+        android:name="com.example.finalproject.journal_entry"
+        tools:layout="@layout/journal_entry">
+    </fragment>
+
+    <fragment
+        android:id="@+id/previous_entries"
+        android:name="com.example.finalproject.previous_entries"
+        tools:layout="@layout/previous_entries">
+    </fragment>
+
+    <fragment
+        android:id="@+id/prompt_page"
+        android:name="com.example.finalproject.prompt_page"
+        tools:layout="@layout/prompt_page">
+    </fragment>
+
+</navigation>

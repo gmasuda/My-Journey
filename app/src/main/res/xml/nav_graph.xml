@@ -1,0 +1,22 @@
+<!-- Example structure of nav_graph.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.finalproject.FirstFragment"
+        android:label="First Fragment"
+        tools:layout="@layout/home_page">
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.finalproject.SecondFragment"
+        android:label="Second Fragment"
+        tools:layout="@layout/entry_page" />
+</navigation>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".prompt_page">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:text="Prompt"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textPrompt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="The Three F's: &#10;Facts:&#10;Feelings:&#10;Fair Request:&#10;This is an important communication skill when it comes to resolving conflict. The first F is used to describe the situation. The second F is used to ask yourself how you feel about said situation. The third F is used to ask yourself think about a fair request to resolve the conflict. Example:&#10;Your significant other has been going out almost everyday. This makes me feel neglected. Could we set specific days where we can spend time together."
+            android:textColor="@android:color/black"
+            android:paddingBottom="35dp" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
